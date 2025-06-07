@@ -67,9 +67,7 @@ async function startMzazi() {
         `${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.`
       );
     }, 10 * 1000);
-  }
-
-  store.bind(client.ev);
+  };
 
   client.ev.on("messages.upsert", async (chatUpdate) => {
     try {
