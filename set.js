@@ -14,12 +14,14 @@ const appname = process.env.APP_NAME || '';
 const herokuapi = process.env.HEROKU_API;
 const gptdm = process.env.GPT_INBOX || 'FALSE';
 const mode = process.env.MODE || 'PUBLIC';
+const antidel = process.env.ANTIDELETE || 'TRUE';
 
 const botname = process.env.BOTNAME || '𝗠𝗭𝗔𝗭𝗜-𝗫𝗠𝗗';
 const antibot = process.env.ANTIBOT || 'FALSE';
 const author = process.env.STICKER_AUTHOR ||'𝗕𝗢𝗧';
 const packname = process.env.STICKER_PACKNAME || '𝗠𝗭𝗔𝗭𝗜';
 const dev = process.env.DEV || '254741388986';
+const anticall = process.env.AUTOREJECT_CALL || 'TRUE';
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
 const DevMzazi = dev.split(",");
@@ -40,6 +42,7 @@ const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
 module.exports = {254788685848
   session,
+  antidel,
   sessionName,
   autobio,
   author,
@@ -47,6 +50,7 @@ module.exports = {254788685848
   dev,
   DevMzazi,
   badwordkick,
+  anticall,
   bad,
   mode,
   group,
